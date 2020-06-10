@@ -1,0 +1,327 @@
+
+/* overflow-x: hidden; / for content not to overflow*/
+body{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* NAV BAR*/
+.padding-nav-left{
+    padding-left:20px;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+#logo-nav {
+  margin: 20px;
+}
+
+.navbar{
+    opacity: 0.8 !important;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-brand{
+  padding: 0px;
+  margin: -20px;
+}
+
+.navbar-nav li {
+  padding: 3px;
+}
+
+.nav-link {
+  color:rgb(222, 223, 208) !important;
+}
+
+.nav-link:hover {
+  color: rgb(248, 250, 209) !important;
+}
+
+/* LANDING PAGE*/
+/*--- Fixed Landing Page Section, Responsive--*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+  }
+
+  .home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Main image for landing page added in CSS*/
+  .home-inner {
+    background-image: url(img/florist-main.jpg);
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    filter: brightness(70%);
+  }
+
+  .offset:before {
+    display: block;
+    content:"";
+    height: 4rem;
+    margin-top: -4rem;
+  }
+
+  /* Text on top of main image*/
+  /* width: 100%; max-width: 100%; when the pade sizes down for the content not to go off the screen*/
+  /* absolute + percentage = place it on top of image*/
+  .caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+  }
+
+  #main-h1{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 1000;
+    color:rgb(248, 250, 234);
+    letter-spacing: 5px;
+    text-shadow: .1rem .1rem .5rem black;
+  }
+
+  #main-h3{
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    font-weight: 1000;
+    color:rgb(248, 250, 234);
+    letter-spacing: 3px;
+    text-shadow: .1rem .1rem .5rem black;
+  }
+
+  .btn-lg {
+    border-width: medium;
+  }
+
+ /* Course Page*/
+ /* Making a main column narrowe*/
+  .narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding: 2rem;
+  }
+
+  #course {
+    background-color: rgb(248, 250, 209);
+  }
+
+  .course-pd {
+    padding-bottom: 25px;
+  }
+
+  .btn-secondary {
+    background-color: #e7d1fa;
+    color: rgb(23, 22, 22);
+    border-color: #dbbaf8;
+    border-width: medium;
+    font-size: medium;
+    margin: 20px;
+    padding: 10px 20px;
+  }
+
+  .btn-secondary:hover {
+    background-color: #f3e8fd;
+    color: rgb(23, 22, 22);
+    border-color: #dbbaf8;
+  }
+
+  /* Features Page*/
+  
+  .jumbotron {
+    border-radius:0;
+    margin-bottom:0px;
+  }
+
+  .h3-page-top {
+    text-transform: uppercase;
+    margin-top: -50px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold !important;
+  }
+
+  .h3-smaller {
+    padding: 25px 0px;
+  }
+
+  .heading-underline {
+    width: 48px;
+    height: 3px;
+    background-color: rgb(109, 109, 109);
+    margin: 0 auto;
+  }
+
+  .feature {
+    padding-top: 50px;
+  }
+
+  .fa-frog {
+    color: #b775f1;
+  }
+
+  .fa-seedling {
+    color: #b775f1;
+  }
+
+  .fa-tree {
+    color: #b775f1;
+  }
+
+
+  /* RESOURCES PAGE*/
+  /* BG image Start */
+  .fixedImg {
+    background-image: url("img/skills-bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    }
+
+  .dark {
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+  }
+  /* BG image END */
+
+
+  #skills-h3 {
+    margin-top: 20px;
+  }
+
+  .h3-smaller-skills{
+    margin-top: 25px;
+    margin-bottom: -25px;
+  }
+
+  .fixed-background p {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .fa-bug {
+    color: #b775f1;
+  }
+
+  .fa-cut {
+    color: #b775f1;
+  }
+
+  .fa-sun {
+    color: #b775f1;
+  }
+  
+  /* REVIEWS PAGE*/
+
+  #h3-reviews{
+    margin-top: 20px;
+  }
+
+  .clients {
+    margin-top: 50px;
+  }
+   /* width: 100%; images stay within column width */
+  .clients img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .fa-quote-left {
+    color: #b775f1;
+    margin-bottom: 10px;
+  }
+
+  .review-hr {
+    border-top: 1px solid #b775f1;
+  }
+
+  .review-img2 {
+    margin-top: 15px;
+  }
+
+  /* CONTACT */
+
+  footer{
+    background-color: #584a65;
+    color:white;
+    padding: 30px;
+  }
+
+  footer img {
+    margin-bottom: 20px;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  footer a:hover {
+    color:#dbbaf8;
+  }
+
+  footer i {
+    margin: 0px 4px;
+  }
+
+   /* MEDIA QUERIES  */
+
+   @media (max-width: 767px) {
+     #h1-course {
+       font-size:30px;
+     }
+
+     .course-pd p {
+       font-size: 16px;
+     }
+
+     .clients img {
+       max-width: 50%;
+       display: block;
+       margin: 0 auto;
+     }
+   }
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
